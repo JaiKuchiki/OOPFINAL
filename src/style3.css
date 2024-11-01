@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 700px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #007bff;
+    text-align: center;
+}
+
+#itineraries-container {
+    margin-top: 20px;
+}
+
+.itinerary-card {
+    background-color: #f8f9fa;
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 4px solid #007bff;
+    border-radius: 5px;
+}
+
+.itinerary-card h3 {
+    margin: 0;
+    color: #007bff;
+}
+
+.itinerary-card p {
+    margin: 5px 0;
+}
+
+.itinerary-card button {
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+    color: white;
+    margin: 5px 5px 0 0;
+}
+
+.container button {
+    background-color: #0062ff;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #00509e;
+}

@@ -1,0 +1,87 @@
+@keyframes fade {
+    0% { background-image: url('./assets/a.jpg'); }
+    33% { background-image: url('./assets/b.jpg'); }
+    66% { background-image: url('./assets/c.jpg'); }
+    100% { background-image: url('./assets/a.jpg'); }
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background: url('./assets/a.jpg') no-repeat center fixed;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fade 30s infinite;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #0062ff;
+    text-align: center;
+}
+
+form {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #0062ff;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #00509e;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+#itinerary-list {
+    margin-top: 30px;
+}
+
+.itinerary-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.itinerary-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+}

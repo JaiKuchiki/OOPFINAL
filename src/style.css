@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: hsl(0, 0%, 98%);
+    --font-color: hsl(200, 15%, 8%);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+
+@keyframes scrollBackground {
+  0% {
+      background-position: center top;
+  }
+  100% {
+      background-position: center bottom;
+  }
+}
+
+@keyframes fade {
+  0% { background-image: url('./assets/a.jpg'); }
+  33% { background-image: url('./assets/b.jpg'); }
+  66% { background-image: url('./assets/c.jpg'); }
+  100% { background-image: url('./assets/a.jpg'); }
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-button {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #0062ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile-button a {
+    text-decoration: none;
+    color: white;
+}
+
+.profile-button:hover {
+    background-color: #003366;
+}
+
+.container:nth-child(1) {
+    background: url('./assets/a.jpg') no-repeat center fixed;
+    background-size: cover;
+    animation: scrollBackground 30s linear infinite;
+    animation: fade 30s infinite;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    display: flex;
+    color: #003366;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.controls input {
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 250px;
+}
+
+.dropdownMenu {
+    width: 200px;
+    position: relative;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.drop-options {
+    position: absolute;
+    display: none;
+    width: 100%;
+    background-color: var(--bg-color);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.drop-options p {
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.show-options {
+    display: block;
+}
+
+#output {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.country-card {
+    background: #0062ff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.country-card:hover {
+    transform: translateY(-5px);
+}
+
+.country-card img {
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.country-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    color: white;
+}
+
+.country-card p {
+    font-size: 0.9em;
+    color: white;
+}
+
+.country-card button {
+    width: 50%;
+    background-color: #0084ff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    margin-top: 10px;
+}
+
+.country-card button:hover {
+    background-color: #003366;
+}
+
+.country-card button a {
+    text-decoration: none;
+    color: white;
+}

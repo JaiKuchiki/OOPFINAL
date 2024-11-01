@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Itineraries</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <div id="country-details" class="country-details"></div>
+        
+        <h1>Plan Your Adventure</h1>
+        <form id="itinerary-form">
+            <input type="text" placeholder="Country" id="country" required readonly>
+            <input type="text" placeholder="City" id="city" required>
+            <textarea placeholder="Itinerary Details" id="details" required></textarea>
+            <button type="button" onclick="saveItinerary()">Save Itinerary</button>
+        </form>
+
+        <div id="itinerary-list">
+            <h2>Your Saved Itineraries</h2>
+            <div class="itinerary-cards" id="cards-container"></div>
+        </div>
+        <button><a href="index.html">Homepage</a></button>
+    </div>
+
+    <script src="itinerary.js"></script>
+</body>
+</html>

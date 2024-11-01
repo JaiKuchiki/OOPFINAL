@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <title>World Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <h1>World Explorer</h1>
+            <button class="profile-button">
+                <a href="index3.html">Itineraries</a>
+            </button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="controls">
+            <i class="bx bx-search"></i>
+            <input type="search" placeholder="Search the country" class="search" id="country_input">
+            <button onclick="buttonClicked()">Search</button>
+        </div>
+
+        <div class="dropdownMenu">
+            <div class="dropdown" onclick="toggleDropdown()">
+                <p>Filter by Region</p>
+                <i class="bx bx-chevron-down"></i>
+            </div>
+            <div class="drop-options" id="drop-options">
+                <p class="regions" onclick="filterByRegion('')">All</p>
+                <p class="regions" onclick="filterByRegion('Africa')">Africa</p>
+                <p class="regions" onclick="filterByRegion('Americas')">America</p>
+                <p class="regions" onclick="filterByRegion('Asia')">Asia</p>
+                <p class="regions" onclick="filterByRegion('Europe')">Europe</p>
+                <p class="regions" onclick="filterByRegion('Oceania')">Oceania</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="output"></div>
+
+    <script src="countryinfo.js"></script>
+</body>
+</html>
